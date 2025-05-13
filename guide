@@ -1,0 +1,38 @@
+sudo apt-get  install -y inspircd tor
+
+#edit config
+nano /etc/inspircd/inspircd.conf
+
+on tor
+uncomment hidden serices
+port as 6667 127.0.0.1:6667
+
+start tor
+# get location of chat room
+
+cat /var/lib/tor/hidden_service/hostname
+copy the onion address
+install hexchat- sudo apt-get install -y hexchat
+open hex chat - hexchat, press add, edit, paste the onion address
+edit preferences- add proxy server- loopback address, port 9050, socks5
+
+
+
+
+
+#change message of the day
+sudo nano /etc/inspircd/inpsircd.motd
+
+#start server 
+sudo service inspircd start
+
+sudo apt-get install -y irssi
+irssi
+
+#to get access
+irssi
+/connect irc.localhost
+
+
+
+
